@@ -27,17 +27,20 @@ module.exports = (grunt)->
 
     # Сlean
     # очистка временных файлов
-    clean: require './grunt/clean'
+    clean: require('./grunt/clean') config
+    # coffee
+    coffee: require('./grunt/coffee') config
 
     # watch
-    watch: require('./grunt/watch')(reloadPort, config)
+    watch: require('./grunt/watch') reloadPort, config
 
     develop:
       server:
         file: "app.js"
 
   grunt.registerTask 'serve',[
-    # 'clean'
+    'clean:develop'
+    'coffee:client'
     'develop'
     'watch'
   ]

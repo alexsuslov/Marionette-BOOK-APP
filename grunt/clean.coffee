@@ -3,7 +3,9 @@
  * Clean
 ###
 'use strict'
-module.exports =
-  develop   : ["<%= config.client %>/scripts/templates"]
-  build     : ["<%= config.public %>/scripts"]
-  release   : ["<%= config.dist %>"]
+module.exports = (config)->
+  develop   : [
+    "#{config.public}/scripts"
+    "#{config.client}/scripts/templates"
+  ]
+  release   : ["#{config.dist}"]

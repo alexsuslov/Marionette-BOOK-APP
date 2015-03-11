@@ -9,9 +9,11 @@ module.exports = (reloadPort, config)->
     livereload: reloadPort
 
   serverScripts:
+    options:
+      livereload: reloadPort
     files:[
       'Gruntfile.coffee'
-      "/app/**/*.coffee"
-      "/config/*.coffee"
+      "app/**/*.coffee"
+      "config/*.coffee"
       'grunt/*.coffee'
     ]
