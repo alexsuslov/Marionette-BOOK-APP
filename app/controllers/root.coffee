@@ -7,6 +7,32 @@
 express   = require 'express'
 router    = express.Router()
 
+###*
+ * logout
+ * @param  {[type]} req express
+ * @param  {[type]} res express
+ * @return void
+###
+router.get '/logout', (req, res)->
+  req.logout()
+  res.clearCookie "user"
+  res.redirect('/')
+
+
+###*
+ * User cookie
+ * @param  {Object}   req  express
+ * @param  {Object}   res  express
+ * @param  {Function} next express
+ * @return void
+###
+router.all "/*", (req, res, next)->
+  if req.user
+    res.cookie "user", JSON.stringify
+      displayName: req.user.displayName
+      role: req.user.role
+  next()
+
 
 
 ###*

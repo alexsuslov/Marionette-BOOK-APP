@@ -16,7 +16,6 @@ require.config
       deps        : ['backbone']
       exports     : 'MM'
 
-
   paths:
     bootstrap   : '../deps/bootstrap/dist/js/bootstrap'
     backbone    : '../deps/backbone/backbone'
@@ -24,4 +23,12 @@ require.config
     handlebars  : '../deps/handlebars/handlebars'
 
 require [], ->
+  getCookie = (name)->
+    if matches = document.cookie.match new RegExp(
+      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+      )
+      decodeURIComponent(matches[1])
+
+  console.log getCookie 'user'
   console.log 'App start'
+

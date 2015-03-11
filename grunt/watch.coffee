@@ -7,6 +7,13 @@ module.exports = (reloadPort, config)->
   options:
     nospawn: true
     livereload: reloadPort
+  clientScripts:
+    files:[
+      'client/**/*.coffee'
+    ]
+    tasks:[
+      'coffee:client'
+    ]
 
   serverScripts:
     options:
@@ -16,4 +23,5 @@ module.exports = (reloadPort, config)->
       "app/**/*.coffee"
       "config/*.coffee"
       'grunt/*.coffee'
+      'public/scripts/**/*.js'
     ]

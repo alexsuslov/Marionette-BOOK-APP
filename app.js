@@ -41,7 +41,7 @@ models.forEach(function (model) {
  *   Passport
  *
  ***************************************************************************/
-require('./config/passport')();
+require('./config/passport')(config);
 
 var app = express();
 /***************************************************************************
