@@ -1,0 +1,303 @@
+.row
+  .col-md-6.col-sm-12
+    // BEGIN PORTLET
+    .portlet.light.tasks-widget
+      .portlet-title
+        .caption.caption-md
+          i.icon-bar-chart.theme-font-color.hide
+          span.caption-subject.theme-font-color.bold.uppercase TASKS
+          span.caption-helper 16 pending
+        .inputs
+          .portlet-input.input-small.input-inline
+            .input-icon.right
+              i.icon-magnifier
+              input.form-control.form-control-solid(type='text', placeholder='search...')
+      .portlet-body
+        .task-content
+          .scroller(style='height: 282px;', data-always-visible='1', data-rail-visible1='0', data-handle-color='#D7DCE2')
+            // START TASK LIST
+            ul.task-list
+              li
+                .task-checkbox
+                  input(type='hidden', value='1', name='test')
+                  input.liChild(type='checkbox', value='2', name='test')
+                .task-title
+                  span.task-title-sp Present 2013 Year IPO Statistics at Board Meeting
+                  span.label.label-sm.label-success Company
+                  span.task-bell
+                    i.fa.fa-bell-o
+                .task-config
+                  .task-config-btn.btn-group
+                    a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                      i.fa.fa-cog
+                      i.fa.fa-angle-down
+                    ul.dropdown-menu.pull-right
+                      li
+                        a(href='javascript:;')
+                          i.fa.fa-check  Complete
+                      li
+                        a(href='javascript:;')
+                          i.fa.fa-pencil  Edit
+                      li
+                        a(href='javascript:;')
+                          i.fa.fa-trash-o  Cancel
+              li
+                .task-checkbox
+                  input.liChild(type='checkbox', value='')
+                .task-title
+                  span.task-title-sp Hold An Interview for Marketing Manager Position
+                  span.label.label-sm.label-danger Marketing
+                .task-config
+                  .task-config-btn.btn-group
+                    a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                      i.fa.fa-cog
+                      i.fa.fa-angle-down
+                    ul.dropdown-menu.pull-right
+                      li
+                        a(href='javascript:;')
+                          i.fa.fa-check  Complete
+                      li
+                        a(href='javascript:;')
+                          i.fa.fa-pencil  Edit
+                      li
+                        a(href='javascript:;')
+                          i.fa.fa-trash-o  Cancel
+              li
+                .task-checkbox
+                  input.liChild(type='checkbox', value='')
+                .task-title
+                  span.task-title-sp AirAsia Intranet System Project Internal Meeting
+                  span.label.label-sm.label-success AirAsia
+                  span.task-bell
+                    i.fa.fa-bell-o
+                .task-config
+                  .task-config-btn.btn-group
+                    a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                      i.fa.fa-cog
+                      i.fa.fa-angle-down
+                    ul.dropdown-menu.pull-right
+                      li
+                        a(href='javascript:;')
+                          i.fa.fa-check  Complete
+                      li
+                        a(href='javascript:;')
+                          i.fa.fa-pencil  Edit
+                      li
+                        a(href='javascript:;')
+                          i.fa.fa-trash-o  Cancel
+              li
+                .task-checkbox
+                  input.liChild(type='checkbox', value='')
+                .task-title
+                  span.task-title-sp Technical Management Meeting
+                  span.label.label-sm.label-warning Company
+                .task-config
+                  .task-config-btn.btn-group
+                    a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                      i.fa.fa-cog
+                      i.fa.fa-angle-down
+                    ul.dropdown-menu.pull-right
+                      li
+                        a(href='javascript:;')
+                          i.fa.fa-check  Complete
+                      li
+                        a(href='javascript:;')
+                          i.fa.fa-pencil  Edit
+                      li
+                        a(href='javascript:;')
+                          i.fa.fa-trash-o  Cancel
+              li
+                .task-checkbox
+                  input.liChild(type='checkbox', value='')
+                .task-title
+                  span.task-title-sp Kick-off Company CRM Mobile App Development
+                  span.label.label-sm.label-info Internal Products
+                .task-config
+                  .task-config-btn.btn-group
+                    a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                i.fa.fa-cog
+                                i.fa.fa-angle-down
+                              ul.dropdown-menu.pull-right
+                                li
+                                  a(href='javascript:;')
+                                    i.fa.fa-check  Complete
+                                li
+                                  a(href='javascript:;')
+                                    i.fa.fa-pencil  Edit
+                                li
+                                  a(href='javascript:;')
+                                    i.fa.fa-trash-o  Cancel
+                        li
+                          .task-checkbox
+                            input.liChild(type='checkbox', value='')
+                          .task-title
+                            span.task-title-sp Prepare Commercial Offer For SmartVision Website Rewamp
+                            span.label.label-sm.label-danger SmartVision
+                          .task-config
+                            .task-config-btn.btn-group
+                              a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                i.fa.fa-cog
+                                i.fa.fa-angle-down
+                              ul.dropdown-menu.pull-right
+                                li
+                                  a(href='javascript:;')
+                                    i.fa.fa-check  Complete
+                                li
+                                  a(href='javascript:;')
+                                    i.fa.fa-pencil  Edit
+                                li
+                                  a(href='javascript:;')
+                                    i.fa.fa-trash-o  Cancel
+                        li
+                          .task-checkbox
+                            input.liChild(type='checkbox', value='')
+                          .task-title
+                            span.task-title-sp Sign-Off The Comercial Agreement With AutoSmart
+                            span.label.label-sm.label-default AutoSmart
+                            span.task-bell
+                              i.fa.fa-bell-o
+                          .task-config
+                            .task-config-btn.btn-group
+                              a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                i.fa.fa-cog
+                                i.fa.fa-angle-down
+                              ul.dropdown-menu.pull-right
+                                li
+                                  a(href='javascript:;')
+                                    i.fa.fa-check  Complete
+                                li
+                                  a(href='javascript:;')
+                                    i.fa.fa-pencil  Edit
+                                li
+                                  a(href='javascript:;')
+                                    i.fa.fa-trash-o  Cancel
+                        li
+                          .task-checkbox
+                            input.liChild(type='checkbox', value='')
+                          .task-title
+                            span.task-title-sp Company Staff Meeting
+                            span.label.label-sm.label-success Cruise
+                            span.task-bell
+                              i.fa.fa-bell-o
+                          .task-config
+                            .task-config-btn.btn-group
+                              a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                i.fa.fa-cog
+                                i.fa.fa-angle-down
+                              ul.dropdown-menu.pull-right
+                                li
+                                  a(href='javascript:;')
+                                    i.fa.fa-check  Complete
+                                li
+                                  a(href='javascript:;')
+                                    i.fa.fa-pencil  Edit
+                                li
+                                  a(href='javascript:;')
+                                    i.fa.fa-trash-o  Cancel
+                        li.last-line
+                          .task-checkbox
+                            input.liChild(type='checkbox', value='')
+                          .task-title
+                            span.task-title-sp KeenThemes Investment Discussion
+                            span.label.label-sm.label-warning KeenThemes
+                          .task-config
+                            .task-config-btn.btn-group
+                              a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                i.fa.fa-cog
+                                i.fa.fa-angle-down
+                              ul.dropdown-menu.pull-right
+                                li
+                                  a(href='javascript:;')
+                                    i.fa.fa-check  Complete
+                                li
+                                  a(href='javascript:;')
+                                    i.fa.fa-pencil  Edit
+                                li
+                                  a(href='javascript:;')
+                                    i.fa.fa-trash-o  Cancel
+                      // END START TASK LIST
+                  .task-footer
+                    .btn-arrow-link.pull-right
+                      a(href='javascript:;') See All Tasks
+              // END PORTLET
+            .col-md-6.col-sm-12
+              // BEGIN PORTLET
+              .portlet.light
+                .portlet-title
+                  .caption.caption-md
+                    i.icon-bar-chart.theme-font-color.hide
+                    span.caption-subject.theme-font-color.bold.uppercase Customer Support
+                    span.caption-helper 45 pending
+                  .inputs
+                    .portlet-input.input-inline.input-small
+                      .input-icon.right
+                        i.icon-magnifier
+                        input.form-control.form-control-solid(type='text', placeholder='search...')
+                .portlet-body
+                  .scroller(style='height: 305px;', data-always-visible='1', data-rail-visible1='0', data-handle-color='#D7DCE2')
+                    .general-item-list
+                      .item
+                        .item-head
+                          .item-details
+                            img.item-pic(src='../../assets/admin/layout3/img/avatar4.jpg')
+                            a.item-name.primary-link(href='') Nick Larson
+                            span.item-label 3 hrs ago
+                          span.item-status
+                            span.badge.badge-empty.badge-success  Open
+                        .item-body Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                      .item
+                        .item-head
+                          .item-details
+                            img.item-pic(src='../../assets/admin/layout3/img/avatar3.jpg')
+                            a.item-name.primary-link(href='') Mark
+                            span.item-label 5 hrs ago
+                          span.item-status
+                            span.badge.badge-empty.badge-warning  Pending
+                        .item-body Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat tincidunt ut laoreet.
+                      .item
+                        .item-head
+                          .item-details
+                            img.item-pic(src='../../assets/admin/layout3/img/avatar6.jpg')
+                            a.item-name.primary-link(href='') Nick Larson
+                            span.item-label 8 hrs ago
+                          span.item-status
+                            span.badge.badge-empty.badge-primary  Closed
+                        .item-body Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+                      .item
+                        .item-head
+                          .item-details
+                            img.item-pic(src='../../assets/admin/layout3/img/avatar7.jpg')
+                            a.item-name.primary-link(href='') Nick Larson
+                            span.item-label 12 hrs ago
+                          span.item-status
+                            span.badge.badge-empty.badge-danger  Pending
+                        .item-body Consectetuer adipiscing elit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                      .item
+                        .item-head
+                          .item-details
+                            img.item-pic(src='../../assets/admin/layout3/img/avatar9.jpg')
+                            a.item-name.primary-link(href='') Richard Stone
+                            span.item-label 2 days ago
+                          span.item-status
+                            span.badge.badge-empty.badge-danger  Open
+                        .item-body Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ut laoreet dolore magna aliquam erat volutpat.
+                      .item
+                        .item-head
+                          .item-details
+                            img.item-pic(src='../../assets/admin/layout3/img/avatar8.jpg')
+                            a.item-name.primary-link(href='') Dan
+                            span.item-label 3 days ago
+                          span.item-status
+                            span.badge.badge-empty.badge-warning  Pending
+                        .item-body Lorem ipsum dolor sit amet, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                      .item
+                        .item-head
+                          .item-details
+                            img.item-pic(src='../../assets/admin/layout3/img/avatar2.jpg')
+                            a.item-name.primary-link(href='') Larry
+                            span.item-label 4 hrs ago
+                          span.item-status
+                            span.badge.badge-empty.badge-success  Open
+                        .item-body Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+              // END PORTLET
+

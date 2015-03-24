@@ -7,6 +7,22 @@ module.exports = (reloadPort, config)->
   options:
     nospawn: true
     livereload: reloadPort
+  scss:
+    files:['scss/**/*.scss']
+    tasks:['sass:compile']
+
+  jadeClient:
+    files:[
+      'client/**/*.jade'
+    ]
+    tasks:['jade:client','handlebars:compile']
+
+  hbsClient:
+    files:[
+      'client/scripts/templates/**/*.hbs'
+    ]
+    tasks:['handlebars:compile']
+
   clientScripts:
     files:[
       'client/**/*.coffee'

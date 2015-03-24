@@ -10,7 +10,7 @@ module.exports = (config)->
       sourceMap: false
     files:[
       expand: true
-      cwd: "client"
+      cwd: "client/scripts"
       src: "**/*.coffee"
       dest: "public/scripts"
       ext: ".js"

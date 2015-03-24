@@ -30,6 +30,12 @@ module.exports = (grunt)->
     clean: require('./grunt/clean') config
     # coffee
     coffee: require('./grunt/coffee') config
+    # Jade
+    jade: require('./grunt/jade') config
+    # handlebars
+    handlebars: require('./grunt/handlebars') config
+    # scss
+    sass: require('./grunt/sass') config
 
     # watch
     watch: require('./grunt/watch') reloadPort, config
@@ -40,7 +46,10 @@ module.exports = (grunt)->
 
   grunt.registerTask 'serve',[
     'clean:develop'
+    'jade:client'
     'coffee:client'
+    'handlebars:compile'
+    'sass:compile'
     'develop'
     'watch'
   ]

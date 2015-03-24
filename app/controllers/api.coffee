@@ -1,6 +1,6 @@
 ###*
  * Marionette BOOK APP
- * Auth controller
+ * Api controller
  * @create 2015-03-11
 ###
 'use strict'
@@ -10,13 +10,12 @@ glob      = require 'glob'
 path      = require 'path'
 
 
-controllers = glob.sync __dirname + '/auth/*.coffee'
-
-controllers.forEach (controller) ->
+routers = glob.sync __dirname + '/api/*.coffee'
+routers.forEach (file)->
   try
-    router.use '/' + path.basename( controller, '.coffee'), require controller
+    router.use '/' + path.basename( file, '.coffee'), require file
   catch e
-    console.log 'Auth error:', controller, e
+    console.log 'Api error:', file, e
 
 module.exports = (app)->
   app.use '/auth', router

@@ -5,14 +5,18 @@ html(lang='ru')
     meta(name='viewport', content='width=device-width')
     meta(name='yandex-verification', content='471961c48c5bb7e5')
     title= title
-    block css
-      link(rel='stylesheet', href='/deps/bootstrap/dist/css/bootstrap.css')
-      //- link(rel='stylesheet', href='/css/style.css')
-    block js
-      script(src="//localhost:35729/livereload.js")
-      script(
-        data-main = '/scripts/main',
-        src = '/deps/requirejs/require.js'
-        )
-  body
+    include ./tmp
+      //- block fonts
+      //-   link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all'
+      //-     rel='stylesheet'
+      //-     type='text/css')
+      //- block css
+      //-   link(rel='stylesheet', href='/css/style.css')
+      //- block js
+    script(src="//localhost:35729/livereload.js")
+    script(
+      data-main = '/scripts/main',
+      src = '/deps/requirejs/require.js'
+      )
+  body.page-header-fixed.page-sidebar-closed-hide-logo.page-sidebar-closed-hide-logo
     block content
