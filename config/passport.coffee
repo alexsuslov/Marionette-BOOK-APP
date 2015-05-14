@@ -1,5 +1,5 @@
 ###*
- * Marionette BOOK APP
+ * Auto Stock
  * passport config
  * @create 2015-03-11
 ###

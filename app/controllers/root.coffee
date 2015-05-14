@@ -1,5 +1,5 @@
 ###*
- * Marionette BOOK APP
+ * Auto Stock
  * root controller
  * @create 2015-03-11
 ###

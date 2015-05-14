@@ -1,5 +1,5 @@
 ###*
- * Marionette BOOK APP
+ * Auto Stock
  * Auth controller
  * @create 2015-03-11
 ###

@@ -1,5 +1,5 @@
 ###*
- * Marionette BOOK APP
+ * Auto Stock
  * Api controller
  * @create 2015-03-11
 ###
@@ -18,4 +18,4 @@ routers.forEach (file)->
     console.log 'Api error:', file, e
 
 module.exports = (app)->
-  app.use '/auth', router
+  app.use '/api', router

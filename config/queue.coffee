@@ -1,5 +1,5 @@
 ###*
- * Marionette BOOK APP
+ * Auto Stock
  * queue config
  * @create 2015-03-24
 ###

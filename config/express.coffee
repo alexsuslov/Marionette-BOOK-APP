@@ -1,5 +1,5 @@
 ###*
- * Marionette BOOK APP
+ * Auto Stock
  * express config
  * @create 2015-03-11
 ###
@@ -42,6 +42,12 @@ module.exports = (app, config)->
   app.use compress()
   app.use express.static config.root + '/public'
   app.use methodOverride()
+
+  # @todo: logger
+  app.all '*', (req, res, next) ->
+    console.log new Date(), req.url
+    # console.log 'headers: ',req.headers
+    next()
 
   ###*
    * Controllers

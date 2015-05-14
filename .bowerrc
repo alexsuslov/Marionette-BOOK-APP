@@ -1,4 +1,4 @@
 {
-  "directory": "public/deps",
+  "directory": "public/libs",
   "json": "bower.json"
 }

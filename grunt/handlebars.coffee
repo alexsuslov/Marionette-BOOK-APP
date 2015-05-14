@@ -1,5 +1,5 @@
 ###*
- * Marionette BOOK APP
+ * Auto Stock
  * handlebars
  * @create 2015-03-12
 ###

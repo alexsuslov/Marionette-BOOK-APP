@@ -1,5 +1,5 @@
 ###*
- * Marionette BOOK APP
+ * Auto Stock
  * Controller for #{pagename}.html
  * @create 2015-03-11
 ###

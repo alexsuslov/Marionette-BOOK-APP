@@ -1,7 +1,7 @@
 ###*
- * Marionette BOOK APP
+ * Auto Stock
  * app config
- * @create 2015-03-11
+ * @create 2015-05-13
 ###
 'use strict'
 rootPath = __dirname
@@ -13,12 +13,8 @@ config =
     root: rootPath
     host: 'localhost'
     port: 9000
-    db  : 'mongodb://localhost/book-app'
+    db  : 'mongodb://localhost/auto-stock'
     passport:
-      github:
-        clientID:'641f28b1f62bd04c1159'
-        clientSecret:'4617396ebf615193b31d94e5a0bcecb394ced197'
-        callbackURL: 'http://localhost:9000/auth/github/return'
       google:
         callbackURL:'http://localhost:9000/auth/google/return'
         clientID:'1072418535460-durnlifrqel8i1mgqc6tq3635amhug26.apps.googleusercontent.com'

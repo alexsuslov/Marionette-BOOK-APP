@@ -1,6 +1,6 @@
 /**
- * Marionette BOOK APP
- * @create 2015-03-11
+ * Auto Stock
+ * @create 2015-05-13
  */
 "use strict"
 require('coffee-script/register');
