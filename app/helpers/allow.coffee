@@ -1,3 +1,10 @@
+###*
+ * Auto Stock
+ * allow
+ * @create 2015-05-14
+###
+'use strict'
+
 module.exports = (opts)->
   throw new Error 'no options' unless opts
   try
